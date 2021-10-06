@@ -8,12 +8,12 @@ export ZSH="/home/user42/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
 ZSH_THEME="gruvbox"
 SOLARIZED_THEME="dark"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -34,7 +34,7 @@ SOLARIZED_THEME="dark"
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -65,8 +65,8 @@ SOLARIZED_THEME="dark"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
@@ -98,14 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# gruvbox_theme
-export TERM=xterm-256color
-
-# norminette_requirements
+#
+# # norminette_requirements
 export USER='bahaas'
 export MAIL='bahaas@student.42.fr'
-alias norminette="~/.norminette/norminette.rb"
 
 # path_aliases
 alias gotodesk="cd ~/Bureau"
@@ -117,19 +113,29 @@ alias gotoserv="cd ~/Bureau/GitHub/42SERVER"
 alias gotoasm="cd ~/Bureau/GitHub/42LIBASM"
 alias gotonet="cd ~/Bureau/GitHub/42NETWHAT"
 alias gotocub="cd ~/Bureau/GitHub/42CUB3D"
+alias gotosl="cd ~/Bureau/GitHub/42SOLONG"
+alias gotoping="cd ~/Bureau/GitHub/42PING"
+alias gotoms="cd ~/Bureau/GitHub/42MINISHELL"
+alias gotophilo="cd ~/Bureau/GitHub/42PHILO"
 alias gotocpp="cd ~/Bureau/GitHub/42CPP"
+alias gotocpp1="cd ~/Bureau/GitHub/42CPP/CPP01"
+alias gotocpp2="cd ~/Bureau/GitHub/42CPP/CPP02"
+alias gotocpp3="cd ~/Bureau/GitHub/42CPP/CPP03"
+alias gotocpp4="cd ~/Bureau/GitHub/42CPP/CPP04"
+alias gotocpp5="cd ~/Bureau/GitHub/42CPP/CPP05"
+alias gotocpp6="cd ~/Bureau/GitHub/42CPP/CPP06"
+alias gotocpp7="cd ~/Bureau/GitHub/42CPP/CPP07"
+alias gotocpp8="cd ~/Bureau/GitHub/42CPP/CPP08"
+alias gotocpp0="cd ~/Bureau/GitHub/42CPP/CPP00"
 
 alias gotos="cd ../srcs"
 alias gotoi="cd ../includes"
 
 # compilation_aliases
-alias gww="gcc -Wextra -Werror -Wall"
+alias gww="clang -Wextra -Werror -Wall"
 
 # git_aliases
 alias gis="git status"
 alias gic="git commit"
 alias gia="git add"
 alias girao="git remote add origin"
-
-# script
-alias cppc="~/init_class.sh"
